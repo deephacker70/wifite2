@@ -1,0 +1,137 @@
+Wifite (also known as Wifite2) is a powerful and popular tool for automating wireless network auditing and cracking Wi-Fi passwords. It is specifically designed for use on Linux-based operating systems like Kali Linux, which is a popular penetration testing distribution.
+
+
+Wifite simplifies the process of capturing wireless network packets, performing handshake captures, and automating various attacks on Wi-Fi networks. It integrates multiple well-known tools such as Aircrack-ng, Pyrit, Reaver, and others to provide a comprehensive set of features for wireless security testing.
+
+
+Key features of Wifite include:
+
+
+1. Automated wireless network scanning: 
+
+Wifite scans the area for available wireless networks and provides a list of targets.
+
+
+
+2. Attack automation: 
+
+It automates the process of capturing the four-way handshake, deauthenticating clients, and performing various types of attacks.
+
+
+
+3. Password cracking: 
+
+Wifite can launch password cracking attacks using various techniques, such as brute-forcing, dictionary attacks, and using precomputed tables (rainbow tables).
+
+
+
+4. Target selection: 
+
+Wifite allows you to choose specific networks or clients to target during the attack.
+
+
+
+5. Interactive and non-interactive modes:
+
+It provides both interactive and non-interactive modes, allowing you to customize the attack process.
+
+
+
+It's important to note that Wifite should be used responsibly and legally. It is primarily intended for authorized security testing, such as assessing the strength of wireless network security or testing your own network's vulnerability. Using it for unauthorized activities, such as accessing networks without permission, is illegal and unethical. Always ensure you have proper authorization before using such tools.
+
+ 
+
+Wifite/Wifite2 Installations Steps:
+
+To install and use Wifite on Kali Linux, you can follow these steps:
+
+Open a terminal window on your Kali Linux system
+
+Update the package lists by running the following command:
+
+sudo apt update
+
+Install the required dependencies by running the following command:
+
+sudo apt install git libpcap-dev
+
+Clone the Wifite repository from GitHub by executing the following command:
+
+Clone 
+
+git clone https://github.com/derv82/wifite2.git
+
+Change into the cloned directory:
+
+cd wifite2 
+
+Install Wifite by running the following command:
+
+sudo python3 setup.py install
+
+Once the installation is complete, you can launch Wifite by typing the following command:
+
+sudo wifite
+
+Note: Running Wifite as root (using sudo) is necessary to ensure it has the required permissions to interact with network interfaces.
+
+After launching Wifite, you can use the tool to automate various wireless attacks and crack Wi-Fi passwords. The interface will present you with different options and targets. Here are a few important ones:
+
+
+Press 1 to select the "Show wireless networks" option. This will display a list of available wireless networks.
+
+Press 2 to select the "Attack clients" option. This will attempt to crack the Wi-Fi password by targeting connected devices.
+
+Press 3 to select the "Capture handshake" option. This will capture the four-way handshake necessary for password cracking.
+
+Press 4 to select the "Deauth clients" option. This allows you to forcefully disconnect clients from a Wi-Fi network.
+STOP: 
+
+To Completly install this tool you need to added or install pip/pip3 file on your Terminal,for that  Click here
+
+Additional Tools Required for Wifite2
+
+ Aircrack-ng
+
+Pyrit
+
+Reaver
+
+
+Wifite2 offers several Benefits for Wireless Network auditing and security testing:
+
+1. Automation: 
+
+Wifite2 automates various tasks involved in wireless network auditing, making the process more efficient and less time-consuming. It automatically scans for available networks, captures handshakes, performs deauthentication attacks, and launches password cracking attempts.
+
+
+
+2. Integration of multiple tools:
+
+ Wifite2 integrates multiple well-known tools and frameworks, such as Aircrack-ng, Pyrit, Reaver, and others. This allows you to leverage the capabilities of these tools through a single interface, simplifying the process and saving you the effort of manually executing different commands.
+
+
+3. Ease of use:
+
+ The tool is designed to be user-friendly and accessible, even for users with limited experience in wireless network auditing. It provides an intuitive command-line interface with interactive menus, making it easier to navigate and select options.
+
+4. Comprehensive attack options:
+
+ Wifite2 provides a wide range of attack options to assess the security of wireless networks. It supports various attack techniques, including brute-forcing, dictionary attacks, and the use of precomputed tables (rainbow tables) to crack Wi-Fi passwords. It also offers features such as client targeting and deauthentication attacks to test network defenses further.
+
+
+5. Efficiency in capturing handshakes: 
+
+Wifite2 streamlines the process of capturing the four-way handshake, which is necessary for password cracking. It automates the capture process and optimizes the timing to increase the success rate of capturing the handshake quickly and reliably.
+
+
+6. Customization options: 
+
+While Wifite2 automates many tasks, it still allows for customization. You can select specific networks or clients to target, choose attack methods, and configure various parameters to tailor the testing process to your requirements.
+
+
+7. Compatibility with Kali Linux:
+
+ Wifite2 is developed and optimized for Kali Linux, a widely used penetration testing distribution. It takes advantage of the tools and resources available within Kali Linux, ensuring compatibility and seamless integration with the environment.
+
+It's important to remember that Wifite2 should be used responsibly, with proper authorization and adherence to ethical guidelines. Using it without permission or for malicious purposes is illegal and can have serious consequences. Always ensure you have the necessary legal permissions and follow ethical guidelines when conducting wireless network security testing
